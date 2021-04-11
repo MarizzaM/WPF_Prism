@@ -30,9 +30,6 @@ namespace WPF_Lesson_11_04_21
                     flag = !flag;
                     return flag;
                 });
-
         }
-
-
     }
 }
