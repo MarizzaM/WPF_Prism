@@ -10,8 +10,10 @@ using System.Windows.Input;
 
 namespace WPF_Lesson_11_04_21
 {
+
     public class MainWindowViewModel
     {
+        bool flag = true;
         public DelegateCommand DelegateCommand1 { get; set; }
         public DelegateCommand DelegateCommand2 { get; set; }
 
@@ -25,7 +27,8 @@ namespace WPF_Lesson_11_04_21
                 () => MessageBox.Show("delegate command"),
                 () =>
                 {
-                    return DateTime.Now.Second % 2 == 0;
+                    flag = !flag;
+                    return flag;
                 });
 
         }
