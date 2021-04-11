@@ -27,9 +27,6 @@ namespace WPF_Lesson_11_04_21
                 {
                     return DateTime.Now.Second % 2 == 0;
                 });
-
         }
-
-
     }
 }
